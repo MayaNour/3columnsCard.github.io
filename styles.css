@@ -57,14 +57,50 @@ button{
     margin-top: 50px !important;
 }
 
+button:hover{
+    background: white;
+    cursor: pointer;
+}
+
 .first_cat{
     background: hsl(31, 77%, 52%);
+}
+
+.first_cat button:hover{
+    color: hsl(31, 77%, 52%);
 }
 
 .second_cat{
     background: hsl(184, 100%, 22%);
 }
 
+.second_cat button:hover{
+    color: hsl(184, 100%, 22%);
+}
+
 .third_cat{
     background: hsl(179, 100%, 13%);
+}
+
+.third_cat button:hover{
+    color: hsl(179, 100%, 13%);
+}
+
+@media only screen and (min-width: 510px) and (max-width: 650px){
+    .container{
+        min-width: 510px;
+    }
+}
+
+@media only screen and (min-width: 320px) and (max-width: 510px){
+    .container{
+        width: 40%;
+        height: unset;
+        grid-template-columns: 100%;
+        min-width: 300px;
+    }
+
+    button{
+        width: 46%;
+    }
 }
